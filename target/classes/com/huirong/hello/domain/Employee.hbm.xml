@@ -4,7 +4,8 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.huirong.hello.domain">
-    <class name="Employee" table="employee">
+    <!--lazy="false" 取消懒加载-->
+    <class name="Employee" table="employee" lazy="false">
         <id name="id" type="java.lang.Integer">
             <generator class="increment">
             </generator>

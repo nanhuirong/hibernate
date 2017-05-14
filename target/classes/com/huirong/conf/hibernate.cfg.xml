@@ -6,7 +6,7 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="connection.driver.class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/huirong?useSSL=true</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/huirong?useUnicode=true&amp;characterEncoding=utf-8</property>
         <property name="connection.username">root</property>
         <property name="connection.password">201194</property>
 
@@ -32,6 +32,10 @@
         <property name="hbm2ddl.auto">update</property>
 
         <mapping resource="com/huirong/hello/domain/Employee.hbm.xml"/>
+
+        <mapping resource="com/huirong/hello/domain/Student.hbm.xml"/>
+        <mapping resource="com/huirong/hello/domain/Course.hbm.xml"/>
+        <mapping resource="com/huirong/hello/domain/StudentCourse.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
 
