@@ -11,5 +11,6 @@ public class Hello {
 //        List lit = new LinkedList()
         double sum = 10.0 / 0;
         System.out.println(sum);
+        int a = 0;
     }
 }
