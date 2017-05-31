@@ -1,5 +1,6 @@
 package com.huirong.hello.utils;
 
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -47,6 +48,7 @@ final public class HibernateUtil {
                     query.setParameter(i, param[i]);
                 }
             }
+
             query.executeUpdate();
 //            list = query.list();
             transaction.commit();

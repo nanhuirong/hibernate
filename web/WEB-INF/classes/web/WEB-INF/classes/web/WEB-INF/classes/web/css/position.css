@@ -1,0 +1,26 @@
+.s1{
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	border: 1px solid red;
+	float: left;
+	margin-left: 10px;
+}
+#spec{
+	/*相对定位*/
+	/*position: relative;*/
+	position: absolute;
+	/*在原来的位置向右移动*/
+	left: 40px;
+	/*在原来的位置向下移动*/
+	top: 100px;
+}
+.s2{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	float: left;
+	position: relative;
+	left: 100px;
+	top: 100px;
+}

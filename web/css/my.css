@@ -1,0 +1,154 @@
+/*类选择器*/
+.style1{
+	width: 300px;
+	height:	200px;
+	border: 1px solid red;
+	margin: 0px 0px 20px 200px;
+}
+/*将类选择器相同的部分写在一起*/
+.style1, .style2{
+
+}
+/*父子选择器*/
+table{
+	width: 298px;
+	height: 180px;
+	border: 1px solid black;
+}
+table td{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/*类选择器*/
+.style2{
+	font-weight: bold;
+	font-size: 20px;
+	background-color: pink;
+	color: black;
+}
+.style4{
+	width: 50px;
+	height: 50px;
+	border: 1px solid blue;
+	margin-top: 10px;
+	margin-left: 450px;
+}
+.style4 img{
+	width: 50px;
+	height: 50px;
+}
+/*id选择器*/
+#style3{
+	font-size: 30px;
+	background-color: silver;
+	color: black;
+}
+/*父子选择器*/
+#style3 span{
+	font-style: italic;
+	color: red;
+}
+/*html选择器* body、input*/
+body{
+	/*指定边框的宽度、样式、颜色*/
+	border: 1px solid red;
+	width: 1000px;
+	height: 1000px;
+	/*上下边距为0，左右居中*/
+	margin: 0 auto;
+	/*color: orange;*/
+}
+/*下面四种必须按照顺序定义*/
+/*定义正常连接的样式*/
+a:link{
+	background-color: silver;
+	color: red;
+	text-decoration: none;
+}
+/*定义访问过的连接的样式*/
+a:visited{
+	color: green;
+}
+/*定义鼠标悬浮时的样式*/
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
+/*定义鼠标点击连接时的样式*/
+a:active{
+	color: white; 
+}
+
+
+/*通配符选择器*/
+*{
+	/*外边距*/
+	/*margin: 0;*/
+	/*margin-left: 10px;
+	margin-top: 10px;*/
+	/*顺时针旋转 上右下左	三个值	（第一个是上 第二个是左右）*/
+	/*margin: 0px 0px 0px 0px;*/
+	/*内边距*/
+	padding: 0;
+}
+
+/*用于控制图片区域显示的宽度和高度*/
+.div1{
+	width: 500px;
+	height: 300px;
+	border: 1px solid #b4b4b4;
+}
+/*用于控制显示图片区域的宽度和高度*/
+.faceul{
+	width: 350px;
+	height: 250px;
+	border: 1px solid red;
+	list-style-type: none;
+}
+/*用于控制单个图片区域的大小*/
+.faceul li{
+	width: 50px;
+	height: 70px;
+	border: 1px solid blue;
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+.faceul img{
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 1px;
+}
+.faceul a{
+	font-size: 12px;
+	margin-left: 5px;
+
+}
+.div2{
+	width: 150px;
+	height: 100px;
+	border: 1px solid blue;
+	margin-top: 5px;
+	background-color: pink;
+}
+#div3{
+	float: right;
+}
+.div3{
+	width: 400px;
+	height: 300px;
+	border: 1px solid green;
+}
+.div4{
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+	float: left;
+}
+
+.test{
+	float: left;
+}

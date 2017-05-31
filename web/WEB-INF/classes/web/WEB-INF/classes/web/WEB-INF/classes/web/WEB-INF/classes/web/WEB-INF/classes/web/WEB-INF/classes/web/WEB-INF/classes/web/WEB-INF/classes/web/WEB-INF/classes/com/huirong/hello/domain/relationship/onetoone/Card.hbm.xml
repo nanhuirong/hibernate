@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--该文件要清楚地表述出 类 和 表 的对应关系-->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.huirong.hello.domain.relationship.onetoone">
+    <!--lazy="false" 取消懒加载-->
+    <class name="Card" table="card" lazy="false">
+        <!--基于主键的一对一对应关系-->
+        <!--<id name="id" type="java.lang.Long">-->
+            <!--<generator class="foreign">-->
+                <!--<param name="property">person</param>-->
+            <!--</generator>-->
+        <!--</id>-->
+        <!--基于外键的一对一关系-->
+        <id name="id" type="java.lang.Long">
+            <generator class="increment"></generator>
+        </id>
+        <property name="date" type="java.util.Date">
+            <column name="date" not-null="true"/>
+        </property>
+        <!--生成外键对主键的约束-->
+        <!--<one-to-one name="person" constrained="true"/>-->
+        <!--基于外键的对应关系-->
+        <many-to-one name="person" unique="true"></many-to-one>
+    </class>
+</hibernate-mapping>

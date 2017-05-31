@@ -1,0 +1,37 @@
+1.表单元素：用户输入数据并且提交给服务器
+2.	输入框：
+		文本框	text
+		密码	password
+		复选框	checkbox
+		单选框	radio
+		图片按钮	image
+		提交	submit
+		重填	reset
+		隐藏	hidden
+	下拉列表
+	文本域
+3.页面
+	<html>
+		<head>
+			<link></link>
+			<meta></meta>
+		</head>
+		<body></body>
+	<html>
+	背景色彩和文字色彩
+	页面空白
+	打开新的窗口	target指定
+		<a href="" target=""></a>
+	标尺线
+		<hr/>
+	字体
+	字符实体
+	文字布局
+		段落<p></p>
+
+4.文字分区 div
+
+
+
+
+

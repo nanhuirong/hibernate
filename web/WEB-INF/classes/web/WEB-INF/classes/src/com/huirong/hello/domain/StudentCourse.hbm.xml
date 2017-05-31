@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--该文件要清楚地表述出 类 和 表 的对应关系-->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.huirong.hello.domain">
+    <!--lazy="false" 取消懒加载-->
+    <class name="StudentCourse" table="studentCourse" lazy="false">
+        <id name="id" type="java.lang.Long">
+            <generator class="increment">
+            </generator>
+        </id>
+        <many-to-one name="student" class="com.huirong.hello.domain.Student" fetch="select">
+            <column name="studentID" />
+        </many-to-one>
+        <many-to-one name="course" class="com.huirong.hello.domain.Course" fetch="select">
+            <column name="courseID" />
+        </many-to-one>
+        <property name="grade" type="java.lang.Long">
+            <column name="grade" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

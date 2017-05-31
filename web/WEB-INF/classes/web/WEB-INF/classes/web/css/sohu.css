@@ -1,0 +1,98 @@
+body{
+	width: 950px;
+	margin: 0 auto;
+	/*background-color: pink;*/
+	/*border: 1px solid red;*/
+	font-size: 12px;
+}
+.top{
+	width: 950px;
+	height: 22px;
+	background-color: pink;
+}
+/*登录区域*/
+.login{
+	width: 416px;
+	height: 22px;
+	background-color: green;
+	float: left;
+}
+/*设为首页*/
+.indexPage{
+	width: 105px;
+	height: 20px;
+	background-color: gray;
+	float: left;
+	margin-left: 80px;
+}
+/*超链接*/
+.myhref{
+	width: 250px;
+	height: 20px;
+	float: right;
+	background-color: #b4b4b4;
+}
+.logo{
+	width: 137;
+	height: 68;
+	float: left;
+	background-color: yellow;
+	margin-top: 3px;
+}
+.logo img{
+	width: 137px;
+	height: 68px;
+}
+.navi{
+	width: 807px;
+	height: 68px;
+	float: left;
+	margin-left: 3px;
+	background-color: green;
+	margin-top: 3px;
+}
+/*广告*/
+.ad{
+	width: 950px;
+	height: 212px;
+	/*background-color: pink;*/
+	margin-top: 3px;
+	float: left;
+	border: 1px solid silver;
+}
+.stuad{
+	width: 116px;
+	height: 196px;
+	background-color: #FC7E8C;
+	float: left;
+	margin: 5px 0 0 4px;
+}
+.ad2{
+	width: 453px;
+	height: 196px;
+	float: left;
+	background-color: #FC7E8C;
+	margin: 5px 0 0 15px;
+}
+/*房地产广告*/
+.housead{
+	width: 150px;
+	height: 196px;
+	float: left;
+	background-color: #FC7E8C;
+	margin: 5px 0 0 15px;
+}
+/*图片广告*/
+.picturead{
+	width: 180px;
+	height: 212px;
+	float: right;
+	/*background-color: #FC7E8C;*/
+	border-left: 1px solid silver;
+	text-align: center;
+}
+
+.picturead img{
+	width: ;
+	height: ;
+}
